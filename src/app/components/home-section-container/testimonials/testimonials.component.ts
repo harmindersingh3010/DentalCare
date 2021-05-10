@@ -39,7 +39,7 @@ export class TestimonialsComponent implements OnInit {
     dots: false,
     navSpeed: 700,
     navText: ['', ''],
-    margin: 15,
+    margin: 5,
     autoplayHoverPause: true,
     responsive: {
       0: {
