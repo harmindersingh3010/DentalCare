@@ -1,0 +1,52 @@
+<section class="">
+    <div class="container">
+        <div class="section-title text-center mt-0">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="mt-0 line-height-1">Our <span class="text-theme-colored">Gallery</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem<br> voluptatem obcaecati!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Portfolio Filter -->
+                    <div class="portfolio-filter text-center">
+                        <a class="active">All</a>
+                        <a class="">Checkup</a>
+                        <a class="">Design</a>
+                        <a class="">Whiting</a>
+                    </div>
+                    <!-- End Portfolio Filter -->
+
+                    <!-- Portfolio Gallery Grid -->
+                    <div class="gallery-isotope default-animation-effect grid-3 gutter-small clearfix">
+                        <!-- Portfolio Item Start -->
+                        <div class="gallery-item design col-lg-4" style="padding: 10px !important;" *ngFor="let p of _albums; let i = index;">
+                            <div class="thumb">
+                                <img class="img-fullwidth" [src]="p.src" alt="project">
+                                <div class="overlay-shade"></div>
+                                <div class="text-holder">
+                                    <div class="title text-center">{{p.caption}}</div>
+                                </div>
+                                <div class="icons-holder">
+                                    <div class="icons-holder-inner">
+                                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                                            <a title="Your Title Here" (click)="open(i)">
+                                                <i class="fa fa-picture-o"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio Item End -->
+                    </div>
+                    <!-- End Portfolio Gallery Grid -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
