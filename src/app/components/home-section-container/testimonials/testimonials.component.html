@@ -15,72 +15,29 @@
         <div class="section-content">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="owl-carousel-3col" data-dots="true">
-                        <div class="item">
-                            <div class="testimonial style1">
-                                <div class="comment bg-theme-colored2">
-                                    <p class="text-white">Lorem ipsum dolor sit ametconse ctetur adipisicing
-                                        elitvolup tatem error sit qui dolorem facilis.</p>
-                                </div>
-                                <div class="content mt-20">
-                                    <div class="thumb pull-right flip"> <img class="img-circle" alt=""
-                                            src="assets/images/testimonials/1.png"> </div>
-                                    <div class="text-right flip pull-right flip mr-20 mt-10">
-                                        <h5 class="author text-theme-colored2">Gavin Smith</h5>
-                                        <h6 class="title text-white mt-0">Happy Patient</h6>
+                    <owl-carousel-o [options]="customOptions">
+                        <ng-container *ngFor="let slide of doctors">
+                            <ng-template carouselSlide id="slide?.name" class="owl-carousel-3col">
+                                <div class="item">
+                                    <div class="testimonial style1">
+                                        <div class="comment bg-theme-colored2">
+                                            <p class="text-white">Lorem ipsum dolor sit ametconse ctetur adipisicing
+                                                elitvolup tatem error sit qui dolorem facilis.</p>
+                                        </div>
+                                        <div class="content mt-20">
+                                            <div class="thumb pull-right flip"> <img class="img-circle" alt=""
+                                                    src="assets/images/testimonials/1.png"> </div>
+                                            <div class="text-right flip pull-right flip mr-20 mt-10">
+                                                <h5 class="author text-theme-colored2">Gavin Smith</h5>
+                                                <h6 class="title text-white mt-0">Happy Patient</h6>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial style1">
-                                <div class="comment bg-theme-colored2">
-                                    <p class="text-white">Lorem ipsum dolor sit ametconse ctetur adipisicing
-                                        elitvolup tatem error sit qui dolorem facilis.</p>
-                                </div>
-                                <div class="content mt-20">
-                                    <div class="thumb pull-right flip"> <img class="img-circle" alt=""
-                                            src="assets/images/testimonials/2.png"> </div>
-                                    <div class="text-right flip pull-right flip mr-20 mt-10">
-                                        <h5 class="author text-theme-colored2">Jonathan Smith</h5>
-                                        <h6 class="title text-white mt-0">Happy Patient</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial style1">
-                                <div class="comment bg-theme-colored2">
-                                    <p class="text-white">Lorem ipsum dolor sit ametconse ctetur adipisicing
-                                        elitvolup tatem error sit qui dolorem facilis.</p>
-                                </div>
-                                <div class="content mt-20">
-                                    <div class="thumb pull-right flip"> <img class="img-circle" alt=""
-                                            src="assets/images/testimonials/3.png"> </div>
-                                    <div class="text-right flip pull-right flip mr-20 mt-10">
-                                        <h5 class="author text-theme-colored2">Mary James</h5>
-                                        <h6 class="title text-white mt-0">Happy Patient</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial style1">
-                                <div class="comment bg-theme-colored2">
-                                    <p class="text-white">Lorem ipsum dolor sit ametconse ctetur adipisicing
-                                        elitvolup tatem error sit qui dolorem facilis.</p>
-                                </div>
-                                <div class="content mt-20">
-                                    <div class="thumb pull-right flip"> <img class="img-circle" alt=""
-                                            src="assets/images/testimonials/1.jpg"> </div>
-                                    <div class="text-right flip pull-right flip mr-20 mt-10">
-                                        <h5 class="author text-theme-colored2">Lucy brown</h5>
-                                        <h6 class="title text-white mt-0">Happy Patient</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+                            </ng-template>
+                        </ng-container>
+                    </owl-carousel-o>
                 </div>
             </div>
         </div>
