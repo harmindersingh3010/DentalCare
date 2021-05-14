@@ -1,60 +1,69 @@
+<!-- <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide>
+        <img src="assets/images/bg/bg18.jpg" alt="">
+    </ng-template>
+    <ng-template carouselSlide>
+        <img src="assets/images/bg/bg16.jpg" alt="">
+    </ng-template>
+</owl-carousel-o> -->
+
+
+<owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide *ngFor="let slide of doctors" id="slide?.img">
+        <img class="img-fullwidth" alt="{{slide?.img}}" [src]="slide?.img">
+    </ng-template>
+</owl-carousel-o>
+
+
 <!-- Section: home-box -->
-<section>
+<section class="home-box">
     <div class="container pb-0">
         <div class="section-content">
             <div class="row equal-height-inner" data-margin-top="-150px">
-                <div
-                    class="col-sm-12 col-md-3 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay1">
+                <div class="col-sm-12 col-md-3 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay1">
                     <div class="sm-height-auto bg-theme-colored">
-                        <div class="text-center pt-30 pb-sm-30">
+                        <div class="text-center pt-30 pb-30 pb-sm-30">
                             <div class="icon-box text-center">
-                                <a class="icon bg-silver-light icon-circled" href="#"> <i
-                                        class="flaticon-medical-blood8 text-theme-colored"></i> </a>
+                                <a class="icon bg-silver-light icon-circled" href="#"> <i class="flaticon-medical-blood8 text-theme-colored"></i> </a>
                                 <h3 class="text-white">Free Consultation</h3>
-                                <p class="text-white">Eleifend lobortis bibendum volutpat est senectus duis
-                                    convallis</p>
+                                <p class="text-white">Eleifend lobortis bibendum volutpat est senectus duis convallis
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div
-                    class="col-sm-12 col-md-3 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay2">
+                <div class="col-sm-12 col-md-3 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay2">
                     <div class="sm-height-auto bg-theme-colored2">
-                        <div class="text-center pt-30 pb-sm-30">
+                        <div class="text-center pt-30 pb-30 pb-sm-30">
                             <div class="icon-box text-center">
-                                <a class="icon bg-silver-light icon-circled" href="#"> <i
-                                        class="flaticon-medical-medical45 text-theme-colored"></i> </a>
+                                <a class="icon bg-silver-light icon-circled" href="#"> <i class="flaticon-medical-medical45 text-theme-colored"></i> </a>
                                 <h3 class="text-white">Quality Brackets</h3>
-                                <p class="text-white">Eleifend lobortis bibendum volutpat est senectus duis
-                                    convallis</p>
+                                <p class="text-white">Eleifend lobortis bibendum volutpat est senectus duis convallis
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div
-                    class="col-sm-12 col-md-3 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay3">
+                <div class="col-sm-12 col-md-3 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay3">
                     <div class="sm-height-auto bg-theme-colored">
-                        <div class="text-center pt-30 pb-sm-30">
+                        <div class="text-center pt-30 pb-30 pb-sm-30">
                             <div class="icon-box text-center">
-                                <a class="icon bg-silver-light icon-circled" href="#"> <i
-                                        class="flaticon-medical-pill text-theme-colored"></i> </a>
+                                <a class="icon bg-silver-light icon-circled" href="#"> <i class="flaticon-medical-pill text-theme-colored"></i> </a>
                                 <h3 class="text-white">Latest Technology</h3>
-                                <p class="text-white">Eleifend lobortis bibendum volutpat est senectus duis
-                                    convallis</p>
+                                <p class="text-white">Eleifend lobortis bibendum volutpat est senectus duis convallis
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div
-                    class="col-sm-12 col-md-3 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay4">
+                <div class="col-sm-12 col-md-3 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay4">
                     <div class="sm-height-auto bg-theme-colored2">
-                        <div class="text-center pt-30 pb-sm-30">
+                        <div class="text-center pt-30 pb-30 pb-sm-30">
                             <div class="icon-box text-center">
-                                <a class="icon bg-silver-light icon-circled" href="#"> <i
-                                        class="flaticon-medical-heart254  text-theme-colored"></i> </a>
+                                <a class="icon bg-silver-light icon-circled" href="#"> <i class="flaticon-medical-heart254  text-theme-colored"></i> </a>
                                 <h3 class="text-white">Excellent Services</h3>
-                                <p class="text-white">Eleifend lobortis bibendum volutpat est senectus duis
-                                    convallis</p>
+                                <p class="text-white">Eleifend lobortis bibendum volutpat est senectus duis convallis
+                                </p>
                             </div>
                         </div>
                     </div>
